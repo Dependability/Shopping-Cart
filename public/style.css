@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(110, 94, 94) ;
+    padding: 0 60px;
+}
+
+.right {
+    display: flex;
+    gap: 100px;
+}
+
+nav h1 {
+    font-size: 32px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart {
+    position: fixed;
+    height: 100vh;
+    box-sizing: content-box;
+    background-color: white;
+    width: 30vw;
+    right: 0;
+    top:0;
+    overflow-y: scroll
+}
+.navButtons {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+a:visited {
+    color: initial;
+}
+.shopItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.shopItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    padding: 20px;
+    width: 250px;
+}
+
+.img-wrapper {
+    height: 200px;
+    width: 200px;
+    padding: 0;
+    background-color: red;
+}
+
+.itemQuantity {
+    display: flex;
+
+}
+
+.itemQuantity input {
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
