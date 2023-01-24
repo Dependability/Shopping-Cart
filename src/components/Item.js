@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import { prettifyPrice } from './helperFunctions';
+import { useNavigate } from 'react-router-dom';
 export default function Item(props) {
-
+    const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
 
     function change(e)  {
@@ -13,7 +14,7 @@ export default function Item(props) {
 
     }, [quantity])
 
-    return <div className='shopItem'>
+    return <div className='shopItem' onClick={()=> {navigate('/shop/' + props.id)}}>
         <div className='img-wrapper'>
             <img src={props.src} alt='graphics-card'/> 
         </div>
@@ -22,9 +23,8 @@ export default function Item(props) {
             <input type="number" value={quantity} onChange={change}/>
             <button onClick={() => {console.log("Ayee");setQuantity((c) => +c + 1)}}>+</button>
         </div> */}
-        <div className="itemPrice">{prettifyPrice(+props.price)}</div>
         <div className='itemName'>{props.name}</div>
-        <button onClick={() => {props.add(quantity, props.name, +props.price)}}>Add to Cart</button>
+        <div className="itemPrice">{prettifyPrice(+props.price)}</div>
 
 
     </div>

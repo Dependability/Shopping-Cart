@@ -4,7 +4,7 @@ function Home() {
     return <div className='home'>
         <div className='body'>
             <Slider />
-            <a>Start Shopping</a>
+            <a href='/shop'>Start Shopping</a>
         </div>
     </div>
 }

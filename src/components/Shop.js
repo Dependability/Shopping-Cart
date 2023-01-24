@@ -7,7 +7,7 @@ function Shop(props) {
         {
             
             Inventory.map(({name, price, id, desc}, i)=> {
-                return <Item name={name} price={price} src={`./images/${id}.png`} add={props.addItem} key={i} />
+                return <Item name={name} price={price} src={`./images/${id}.png`} id={id} add={props.addItem} key={i} />
             })
         }
         </div>
