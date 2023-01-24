@@ -18,7 +18,7 @@ function App() {
 
     const addElement = document.createElement('div');
     const check = document.createElement('img');
-    check.setAttribute('src', '/images/check-circle-outline.svg');
+    check.setAttribute('src', './images/check-circle-outline.svg');
     check.setAttribute('alt', 'check')
     check.classList.add('.feedCheck');
     addElement.appendChild(check);
