@@ -1,18 +1,7 @@
-import {useState, useEffect} from 'react';
 import { prettifyPrice } from './helperFunctions';
 import { useNavigate } from 'react-router-dom';
 export default function Item(props) {
     const navigate = useNavigate();
-    const [quantity, setQuantity] = useState(1);
-
-    function change(e)  {
-        setQuantity(e.target.value)
-    }
-
-    useEffect(()=> {
-        console.log(quantity)
-
-    }, [quantity])
 
     return <div className='shopItem' onClick={()=> {navigate('/shop/' + props.id)}}>
         <div className='img-wrapper'>

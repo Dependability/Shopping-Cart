@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import {useState} from 'react';
 import Shop from "./components/Shop";
 import ItemView from './components/ItemView'
-import {prettifyPrice} from './components/helperFunctions';
 import Cart from './components/Cart';
 import Icon from "@mdi/react";
 import { mdiGithub } from "@mdi/js";
