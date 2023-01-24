@@ -22,7 +22,7 @@ export default function ItemView(props) {
         </div>
         <div className='row'>
         <div className='photo'>
-            <img src={`/images/${itemObj.id}.png`} alt='why'></img>
+            <img src={`./images/${itemObj.id}.png`} alt='why'></img>
         </div>
         <div className='specs'>
             <div className='heading'>Specifications</div>

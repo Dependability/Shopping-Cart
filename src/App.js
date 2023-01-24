@@ -56,7 +56,7 @@ function App() {
   
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='Shopping-Cart'>
     <nav>
             <h1>Graphics Shop</h1>
             <div className='right'>

@@ -32,7 +32,7 @@ const Cart = (props)  => {
             return <div className='cartItem'>
                 <div className='info'>
                 <p>{val}</p>
-                <img src={`/images/${props.cartItems[val].id}.png`} alt=''/>
+                <img src={`./images/${props.cartItems[val].id}.png`} alt=''/>
                 <p>{prettifyPrice(props.cartItems[val].price)}</p>
                 </div>
                 <div class='quantity'>
