@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.js": "/Shopping-Cart/static/js/main.ef0cb3d9.js",
+    "main.css": "/Shopping-Cart/static/css/main.a83faf51.css",
+    "main.js": "/Shopping-Cart/static/js/main.ddeaae73.js",
     "static/js/787.d6fe38e8.chunk.js": "/Shopping-Cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/rtx-4090.png": "/Shopping-Cart/static/media/rtx-4090.53b2d46eefd85c89ba7c.png",
+    "static/media/gtx-1080.png": "/Shopping-Cart/static/media/gtx-1080.a8a82f7b151a3a8e08b9.png",
+    "static/media/rtx-3090.png": "/Shopping-Cart/static/media/rtx-3090.f6ee6c1d662b951e0e34.png",
+    "static/media/rtx-2080.png": "/Shopping-Cart/static/media/rtx-2080.be42d431b79e520f8a2f.png",
+    "static/media/gtx-1080-ti.png": "/Shopping-Cart/static/media/gtx-1080-ti.72a02e6f629107eaf935.png",
+    "static/media/gtx-1660-super.png": "/Shopping-Cart/static/media/gtx-1660-super.66a87e64e890f33f5a69.png",
     "index.html": "/Shopping-Cart/index.html",
-    "main.ef0cb3d9.js.map": "/Shopping-Cart/static/js/main.ef0cb3d9.js.map",
+    "static/media/check-circle-outline.svg": "/Shopping-Cart/static/media/check-circle-outline.f289d37fb423e60d9487b247c547ec65.svg",
+    "main.a83faf51.css.map": "/Shopping-Cart/static/css/main.a83faf51.css.map",
+    "main.ddeaae73.js.map": "/Shopping-Cart/static/js/main.ddeaae73.js.map",
     "787.d6fe38e8.chunk.js.map": "/Shopping-Cart/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ef0cb3d9.js"
+    "static/css/main.a83faf51.css",
+    "static/js/main.ddeaae73.js"
   ]
 }
