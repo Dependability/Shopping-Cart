@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Inventory from "./Inventory";
+import '../styles/style.css';
 import Icon from '@mdi/react';
 import { prettifyPrice } from "./helperFunctions";
 import { mdiChip, mdiMemory, mdiChevronDoubleUp } from '@mdi/js';
@@ -22,7 +23,7 @@ export default function ItemView(props) {
         </div>
         <div className='row'>
         <div className='photo'>
-            <img src={`./images/${itemObj.id}.png`} alt='why'></img>
+            <img src={itemObj.img} alt='why'></img>
         </div>
         <div className='specs'>
             <div className='heading'>Specifications</div>
@@ -41,7 +42,7 @@ export default function ItemView(props) {
         </div>
         </div>
         <div className='addToCart' onClick={()=> {
-            props.addItem(1, itemObj.name, itemObj.price, itemObj.id);
+            props.addItem(1, itemObj.name, itemObj.price, itemObj);
         }}>Add to Cart</div>
         <div className='desc'>
             <div className='heading'>Description</div>

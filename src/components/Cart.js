@@ -1,7 +1,8 @@
 import { prettifyPrice, itemTotal } from "./helperFunctions";
 import { useState } from "react";
+import '../styles/style.css';
 import Icon from '@mdi/react';
-import { mdiCartVariant, mdiWindowClose, mdiTrashCanOutline  } from '@mdi/js';;
+import { mdiCartVariant, mdiWindowClose, mdiTrashCanOutline, mdiPrinterPosRefresh  } from '@mdi/js';;
 
 
 
@@ -29,10 +30,11 @@ const Cart = (props)  => {
         <div className='cart' onClick={(e) => {e.stopPropagation()}}>
         <div className='closeCart' onClick={() => {setVisible(false)}}><Icon path={mdiWindowClose} size={2} /></div>
         {Object.keys(props.cartItems).map((val)=>{
+            console.log(val)
             return <div className='cartItem'>
                 <div className='info'>
                 <p>{val}</p>
-                <img src={`./images/${props.cartItems[val].id}.png`} alt=''/>
+                <img src={props.cartItems[val].objectInfo.img} alt=''/>
                 <p>{prettifyPrice(props.cartItems[val].price)}</p>
                 </div>
                 <div class='quantity'>

@@ -1,5 +1,6 @@
 import Inventory from './Inventory';
 import { useState, useEffect } from 'react';
+import '../styles/style.css';
 import { useNavigate } from 'react-router-dom';
 const InventoryPrev = Inventory.slice(0, 5);
 
@@ -78,7 +79,7 @@ export default function Slider() {
                 return <div className='item' key={ind} onClick={() => {navigate(`/shop/${val.id}`)}}>
                     <div className='name'>{val.name}</div>
                     <div className='preview'>
-                        <img src={'./images/' + val.id + '.png'} alt='' />
+                        <img src={val.img} alt='' />
                     </div>
                 </div>
             })}

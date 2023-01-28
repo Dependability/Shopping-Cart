@@ -1,4 +1,5 @@
 import { prettifyPrice } from './helperFunctions';
+import '../styles/style.css';
 import { useNavigate } from 'react-router-dom';
 export default function Item(props) {
     const navigate = useNavigate();

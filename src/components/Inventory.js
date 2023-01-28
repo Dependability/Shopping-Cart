@@ -1,4 +1,9 @@
-
+import rtx4090 from '../assets/rtx-4090.png';
+import rtx3090 from '../assets/rtx-3090.png';
+import rtx2080 from '../assets/rtx-2080.png';
+import gtx1080ti from '../assets/gtx-1080-ti.png';
+import gtx1080 from '../assets/gtx-1080.png';
+import gtx1660super from '../assets/gtx-1660-super.png';
 
 const Inventory = [
     {
@@ -23,7 +28,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "24GB GDDR6X",
             boost: "2.52 GHz"
         },
-        id: 'rtx-4090'
+        id: 'rtx-4090',
+        img: rtx4090
     },{
         name: 'NVIDIA GeForce RTX 3090',
         price: 999.99,
@@ -46,7 +52,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "24GB GDDR6X",
             boost: "1.70 GHz"
         },
-        id: 'rtx-3090'
+        id: 'rtx-3090',
+        img: rtx3090
     },{
         name: 'NVIDIA GeForce RTX 2080',
         price: 489.99,
@@ -69,7 +76,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "8GB GDDR6",
             boost: "1.8 GHz"
         },
-        id: 'rtx-2080'
+        id: 'rtx-2080',
+        img: rtx2080
     },{
         name: 'NVIDIA GeForce GTX 1080 Ti',
         price: 699.99,
@@ -92,7 +100,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "11GB GDDR5X",
             boost: "1582 MHz"
         },
-        id: 'gtx-1080-ti'
+        id: 'gtx-1080-ti',
+        img: gtx1080ti
     },{
         name: 'NVIDIA GeForce GTX 1080',
         price: 449.99,
@@ -115,7 +124,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "8GB GDDR5X",
             boost: "1733 MHz" 
         },
-        id: 'gtx-1080'
+        id: 'gtx-1080',
+        img: gtx1080
     },{
         name: 'NVIDIA GeForce GTX 1660 Super',
         price: 300,
@@ -138,7 +148,8 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime`,
             memory: "6GB GDDR5",
             boost: "1785 MHz"
         },
-        id: 'gtx-1660-super'
+        id: 'gtx-1660-super',
+        img: gtx1660super
     },
 
 ];

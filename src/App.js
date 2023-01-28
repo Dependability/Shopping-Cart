@@ -1,11 +1,14 @@
 import { BrowserRouter , Routes, Route, Link} from "react-router-dom";
 import Home from "./components/Home";
+import './styles/style.css';
 import {useState} from 'react';
 import Shop from "./components/Shop";
 import ItemView from './components/ItemView'
 import Cart from './components/Cart';
 import Icon from "@mdi/react";
 import { mdiGithub } from "@mdi/js";
+import checkIcon from './assets/check-circle-outline.svg';
+
 
 function App() {
   const [cartItems, setCartItems] = useState({})
@@ -18,7 +21,7 @@ function App() {
 
     const addElement = document.createElement('div');
     const check = document.createElement('img');
-    check.setAttribute('src', './images/check-circle-outline.svg');
+    check.setAttribute('src', checkIcon);
     check.setAttribute('alt', 'check')
     check.classList.add('.feedCheck');
     addElement.appendChild(check);
@@ -35,7 +38,7 @@ function App() {
     
   }
 
-  function addItem(x, name, price, id) { 
+  function addItem(x, name, price, objectInfo) { 
     addToFeed();
     setCartItems((c) => {
       let newObj = {...c};
@@ -45,7 +48,7 @@ function App() {
         newObj[name] = copiedContent;
       } else {
         
-        newObj[name] = {'quantity': +x, 'price':price, id};
+        newObj[name] = {'quantity': +x, 'price':price, objectInfo};
         
       }
       console.log(newObj[name])
