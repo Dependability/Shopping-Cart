@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Shopping Cart
+
+A fake shop where you can "buy" Graphics cards!
+
+👉 [LIVE DEMO](https://dependability.github.io/Shopping-Cart/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
