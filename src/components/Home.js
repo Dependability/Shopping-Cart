@@ -5,7 +5,7 @@ function Home() {
     return <div className='home'>
         <div className='body'>
             <Slider />
-            <a href='Shopping-Cart/shop'>Start Shopping</a>
+            <a href={`${process.env.PUBLIC_URL}/shop`}>Start Shopping</a>
         </div>
     </div>
 }
